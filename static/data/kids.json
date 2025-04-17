@@ -1,0 +1,756 @@
+[
+    {
+    "question": "Choose the correct picture for the word: five",
+    "image": "1-1.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "1-1.png" },
+    { "text": "B", "value": "B", "image": "2-1.jpg" },
+    { "text": "C", "value": "C", "image": "3-1.png" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "Choose the correct picture for the word: pencil",
+    "image": "question2.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "4-1.jpg" },
+    { "text": "B", "value": "B", "image": "5-1.png" },
+    { "text": "C", "value": "C", "image": "6-1.jpg" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "Choose the correct picture for the word: ball",
+    "image": "question3.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "7-1.png" },
+    { "text": "B", "value": "B", "image": "8-1.jpg" },
+    { "text": "C", "value": "C", "image": "9-1.jpeg" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "Choose the correct picture for: a big dog",
+    "image": "question4.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "10-1.jpeg" },
+    { "text": "B", "value": "B", "image": "11-1.jpeg" },
+    { "text": "C", "value": "C", "image": "12-1.jpeg" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "Choose the correct picture for: eyes",
+    "image": "question5.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "eyes.gif" },
+    { "text": "B", "value": "B", "image": "12620026.gif" },
+    { "text": "C", "value": "C", "image": "16678464.gif" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "I’ve got a long tail. Which animal is it?",
+    "image": "question6.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "16-1.png" },
+    { "text": "B", "value": "B", "image": "17-1.jpeg" },
+    { "text": "C", "value": "C", "image": "18-1.png" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "Choose the correct picture for the word: socks",
+    "image": "question7.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "19-1.png" },
+    { "text": "B", "value": "B", "image": "20-1.png" },
+    { "text": "C", "value": "C", "image": "21-1.png" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "Choose the correct picture for the sentence: I can't ride a bike.",
+    "image": "question8.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "22-1.jpeg" },
+    { "text": "B", "value": "B", "image": "9-1.png" },
+    { "text": "C", "value": "C", "image": "24-1.jpeg" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "Choose the correct picture for the word: bedroom",
+    "image": "question9.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "25-1.png" },
+    { "text": "B", "value": "B", "image": "26-1.png" },
+    { "text": "C", "value": "C", "image": "27-1.jpg" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "Choose the correct picture for the sentence: I like ice cream.",
+    "image": "question10.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "27-1.jpeg" },
+    { "text": "B", "value": "B", "image": "28-1.jpeg" },
+    { "text": "C", "value": "C", "image": "30-1.jpg" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "Choose the correct picture for the word: eighteen",
+    "image": "question11.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "31-1.png" },
+    { "text": "B", "value": "B", "image": "32-1.png" },
+    { "text": "C", "value": "C", "image": "33-1.png" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "Choose the correct picture for the sentence: These are kites.",
+    "image": "question12.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "34-1.png" },
+    { "text": "B", "value": "B", "image": "35-1.jpg" },
+    { "text": "C", "value": "C", "image": "36-1.png" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "Choose the correct picture for the word: lamp",
+    "image": "question13.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "37-1.png" },
+    { "text": "B", "value": "B", "image": "13-B.png" },
+    { "text": "C", "value": "C", "image": "39-1.png" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "Choose the correct picture for the sentence: They're eating fruit.",
+    "image": "question14.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "40-1.jpeg" },
+    { "text": "B", "value": "B", "image": "41-1.jpeg" },
+    { "text": "C", "value": "C", "image": "kikaaass.jpg" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "Choose the correct picture for the word: juice",
+    "image": "question15.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "43-1.jpeg" },
+    { "text": "B", "value": "B", "image": "44-1.jpeg" },
+    { "text": "C", "value": "C", "image": "45-1.jpg" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "Choose the correct picture for the sentence: It can swim and jump.",
+    "image": "question16.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "46-1.png" },
+    { "text": "B", "value": "B", "image": "47-1.png" },
+    { "text": "C", "value": "C", "image": "48-1.jpg" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "Choose the correct picture for the word: badminton",
+    "image": "question17.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "49-1.png" },
+    { "text": "B", "value": "B", "image": "50-1.jpg" },
+    { "text": "C", "value": "C", "image": "51-1.jpeg" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "Where is the shop?",
+    "image": "question18.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "52-1.jpeg" },
+    { "text": "B", "value": "B", "image": "53-1.jpeg" },
+    { "text": "C", "value": "C", "image": "54-1.jpeg" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "Who are they?",
+    "image": "question19.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "55-1.png" },
+    { "text": "B", "value": "B", "image": "56-1.png" },
+    { "text": "C", "value": "C", "image": "57-1.jpeg" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "What is she doing?",
+    "image": "question20.jpg",
+    "options": [
+    { "text": "A", "value": "A", "image": "58-1.jpeg" },
+    { "text": "B", "value": "B", "image": "59-1.jpeg" },
+    { "text": "C", "value": "C", "image": "60-1.png" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "My name is Tom. ___ a boy.",
+    "image": "1.png",  
+  "options": [
+    { "text": "It's", "value": "A" },
+    { "text": "I'm", "value": "B" },
+    { "text": "He's", "value": "C" },
+    { "text": "She's", "value": "D" }
+  ],
+  "correct_answer": "B"  
+    },
+    {
+    "question": "Is it a bag?",
+    "image": "2.png", 
+    "options": [
+    { "text": "No, it is.", "value": "A" },
+    { "text": "Yes, it is.", "value": "B" },
+    { "text": "No, it isn't.", "value": "C" },
+    { "text": "Yes, it isn't.", "value": "D" }
+    ],
+    "correct_answer": "C" 
+    },
+    {
+      "question": "That's my ___. He's old.",
+      "image": "3.jpeg",
+      "options": [
+      { "text": "baby", "value": "A" },
+      { "text": "family", "value": "B" },
+      { "text": "brother", "value": "C" },
+      { "text": "grandpa", "value": "D" }
+      ],
+      "correct_answer": "D" 
+      },
+    {
+    "question": "Are you ___?",
+    "image": "4.jpeg",
+    "options": [
+    { "text": "hungry", "value": "A" },
+    { "text": "cold", "value": "C" },
+    { "text": "angry", "value": "B" },
+    { "text": "hot", "value": "D" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "A panda can ___ a tree.",
+    "image": "5.png",
+    "options": [
+    { "text": "jump", "value": "A" },
+    { "text": "catch", "value": "C" },
+    { "text": "throw", "value": "B" },
+    { "text": "climb", "value": "D" }
+    ],
+    "correct_answer": "D" 
+    },
+    {
+    "question": "Where are the paints? They're ___ the box.",
+    "image": "6.jpeg",
+    "options": [
+    { "text": "in", "value": "A" },
+    { "text": "under", "value": "C" },
+    { "text": "on", "value": "B" },
+    { "text": "next to", "value": "D" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "My rabbits have got small feet, long ears and two ___.",
+    "image": "7.png",
+    "options": [
+    { "text": "eyes", "value": "A" },
+    { "text": "tails", "value": "B" },
+    { "text": "arms", "value": "C" },
+    { "text": "legs", "value": "D" }
+    ],
+    "correct_answer": "A" 
+    },
+    {
+    "question": "What ___ you wear to school? A black skirt and white shirt.",
+    "image": "8.jpeg",
+    "options": [
+    { "text": "does", "value": "A" },
+    { "text": "are", "value": "B" },
+    { "text": "do", "value": "C" },
+    { "text": "is", "value": "D" }
+    ],
+    "correct_answer": "C" 
+    },
+    {
+    "question": "There are two ___ in the room.",
+    "image": "9.jpg",
+    "options": [
+    { "text": "wardrobes", "value": "A" },
+    { "text": "clocks", "value": "B" },
+    { "text": "lamps", "value": "C" },
+    { "text": "beds", "value": "D" }
+    ],
+    "correct_answer": "D" 
+    },
+    {
+      "question": "I like ___ but I don't like bananas.",
+      "image": "10v1.png",
+      "options": [
+        { "text": "tomatoes", "value": "A" },
+        { "text": "coconuts", "value": "B" },
+        { "text": "mangoes", "value": "C" },
+        { "text": "pears", "value": "D" }
+      ],
+      "correct_answer": "B" 
+      },
+    {
+    "question": "There are lots of ___ in Australia but there aren't any pandas.",
+    "image": "11.jpg",
+    "options": [
+    { "text": "Bears", "value": "A" },
+    { "text": "wolves", "value": "B" },
+    { "text": "camels", "value": "C" },
+    { "text": "kangaroos", "value": "D" }
+    ],
+    "correct_answer": "D" 
+    },
+    
+   
+  {
+    "question": "We ___ on Friday.",
+    "image": "12.jpeg",
+    "options": [
+      { "text": "go to school", "value": "A" },
+      { "text": "do gymnastics", "value": "B" },
+      { "text": "play basketball", "value": "C" },
+      { "text": "have a music lesson", "value": "D" }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "question": "Whose ___ are these? They're Jane's.",
+    "image": "13.jpeg",
+    "options": [
+      { "text": "guitar", "value": "A" },
+      { "text": "glasses", "value": "B" },
+      { "text": "camera", "value": "C" },
+      { "text": "headphones", "value": "D" }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "question": "Kirsty ___ her grandma on Saturdays.",
+    "image": "14.jpeg",
+    "options": [
+      { "text": "visit", "value": "A" },
+      { "text": "visits", "value": "B" },
+      { "text": "don't visit", "value": "C" },
+      { "text": "doesn't visit", "value": "D" }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "question": "What are John and Kate doing? They ___ playing in the snow.",
+    "image": "15.jpeg",
+    "options": [
+      { "text": "is", "value": "A" },
+      { "text": "do", "value": "B" },
+      { "text": "are", "value": "C" },
+      { "text": "can", "value": "D" }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "question": "Is your brother sleeping? No,he ___. He's reading a book.",
+    "image": "16.png",
+    "options": [
+      { "text": "is", "value": "A" },
+      { "text": "do", "value": "B" },
+      { "text": "are", "value": "C" },
+      { "text": "can", "value": "D" }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "question": "I like making a snowman in ___.",
+    "image": "17.png",
+    "options": [
+      { "text": "spring", "value": "A" },
+      { "text": "summer", "value": "B" },
+      { "text": "autumn", "value": "C" },
+      { "text": "winter", "value": "D" }
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "question": "___ you like some grapes? Yes, please.",
+    "image": "18.png",
+    "options": [
+      { "text": "Do", "value": "A" },
+      { "text": "Are", "value": "B" },
+      { "text": "Can", "value": "C" },
+      { "text": "Would", "value": "D" }
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "question": "Last night I was at home. I was in the ___ I made a cake with my mum.",
+    "image": "19.jpg",
+    "options": [
+      { "text": "hall", "value": "A" },
+      { "text": "kitchen", "value": "B" },
+      { "text": "bathroom", "value": "C" },
+      { "text": "dining room", "value": "D" }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "question": "Last weekend, I ___ an art gallery with my mum and dad.",
+    "image": "20.jpeg",
+    "options": [
+      { "text": "visit", "value": "A" },
+      { "text": "visits", "value": "B" },
+      { "text": "visited", "value": "C" },
+      { "text": "visiting", "value": "D" }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "question": "At school I'm good at  ___. We are making a website in my class.",
+    "image": "21.jpeg",
+    "options": [
+      { "text": "maths", "value": "A" },
+      { "text": "music", "value": "B" },
+      { "text": "social studies", "value": "C" },
+      { "text": "computer studies", "value": "D" }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "question": "We ___ have PE before lunch on Wednesday.",
+    "image": "22.png",
+    "options": [
+      { "text": "once", "value": "A" },
+      { "text": "twice", "value": "B" },
+      { "text": "always", "value": "C" },
+      { "text": "three times", "value": "D" }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "question": "I often go to the ___ after school.I need to study",
+    "image": "23.jpeg",
+    "options": [
+      { "text": "library", "value": "A" },
+      { "text": "cinema", "value": "B" },
+      { "text": "supermarket", "value": "C" },
+      { "text": "swimming pool", "value": "D" }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "question": "Last weekend we ___ sad. It was raining.",
+    "image": "24.jpeg",
+    "options": [
+      { "text": "is", "value": "A" },
+      { "text": "am", "value": "B" },
+      { "text": "was", "value": "C" },
+      { "text": "were", "value": "D" }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "question": "There are ___ of shops in my city.",
+    "image": "25.png",
+    "options": [
+      { "text": "some", "value": "A" },
+      { "text": "much", "value": "B" },
+      { "text": "a lot", "value": "C" },
+      { "text": "many", "value": "D" }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "question": "Dolphins are ___ than sharks.",
+    "image": "26.jpg",
+    "options": [
+      { "text": "nice", "value": "A" },
+      { "text": "good", "value": "B" },
+      { "text": "worst", "value": "C" },
+      { "text": "friendlier", "value": "D" }
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "question": "Did you ___ a good day yesterday? Yes, I went to a restaurant with my friends.",
+    "image": "27.jpeg",
+    "options": [
+      { "text": "has", "value": "A" },
+      { "text": "had", "value": "B" },
+      { "text": "have", "value": "C" },
+      { "text": "having", "value": "D" }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "question": "Were there any windows in the cave? No, there ___.",
+    "image": "28.jpeg",
+    "options": [
+      { "text": "are", "value": "A" },
+      { "text": "aren't", "value": "B" },
+      { "text": "wasn't", "value": "C" },
+      { "text": "weren't", "value": "D" }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "question": "We're going swimming today. Don't forget your ___.",
+    "image": "29.jpeg",
+    "options": [
+      { "text": "glove", "value": "A" },
+      { "text": "trainers", "value": "B" },
+      { "text": "goggles", "value": "C" },
+      { "text": "tracksuit", "value": "D" }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "question": "___ you going to France on holiday? Yes, I am.",
+    "image": "30.png",
+    "options": [
+      { "text": "Do", "value": "A" },
+      { "text": "Are", "value": "B" },
+      { "text": "Can", "value": "C" },
+      { "text": "Am", "value": "D" }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "question": "Did you climb this ___ when you went to Italy? Yes, we did.",
+    "image": "31.jpeg",
+    "options": [
+      { "text": "lake", "value": "A" },
+      { "text": "island", "value": "B" },
+      { "text": "volcano", "value": "C" },
+      { "text": "countryside", "value": "D" }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "question": "I ___ tie my shoelaces when I was seven.",
+    "image": "32.png",
+    "options": [
+      { "text": "could", "value": "A" },
+      { "text": "was", "value": "B" },
+      { "text": "can", "value": "C" },
+      { "text": "did", "value": "D" }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "question": "Remember to take your ___. It's dark outside.",
+    "image": "33.jpeg",
+    "options": [
+      { "text": "safety vest", "value": "A" },
+      { "text": "brakes", "value": "B" },
+      { "text": "wheel", "value": "C" },
+      { "text": "gears", "value": "D" }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "question": "Do you like my cake? Yes, it is ___ delicious than mine.",
+    "image": "34.jpeg",
+    "options": [
+      { "text": "most", "value": "A" },
+      { "text": "more", "value": "B" },
+      { "text": "much", "value": "C" },
+      { "text": "many", "value": "D" }
+    ],
+    "correct_answer": "B"
+  },
+  
+  {
+    "question": "I've got a ___. You shouldn't talk.",
+    "image": "35.jpg",
+    "options": [
+      { "text": "earache", "value": "A" },
+      { "text": "sore throat", "value": "B" },
+      { "text": "broken arm", "value": "C" },
+      { "text": "stomach ache", "value": "D" }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "question": "Why ___ you buying a present? It was my mum's birthday.",
+    "image": "36.png",
+    "options": [
+      { "text": "was", "value": "A" },
+      { "text": "were", "value": "B" },
+      { "text": "wasn't", "value": "C" },
+      { "text": "weren't", "value": "D" }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "question": "Can I use this for my smartphone? Whose ___ is it?",
+    "image": "37.jpeg",
+    "options": [
+      { "text": "charger", "value": "A" },
+      { "text": "laptop", "value": "B" },
+      { "text": "mouse", "value": "C" },
+      { "text": "screen", "value": "D" }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "question": "A fish has got tiny ___.",
+    "image": "38.jpeg",
+    "options": [
+      { "text": "fur", "value": "A" },
+      { "text": "petals", "value": "B" },
+      { "text": "scales", "value": "C" },
+      { "text": "feathers", "value": "D" }
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "question": "What ___ if you put a marble in water? It sinks.",
+    "image": "39.jpeg",
+    "options": [
+      { "text": "happen", "value": "A" },
+      { "text": "happens", "value": "B" },
+      { "text": "happened", "value": "C" },
+      { "text": "happening", "value": "D" }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "question": "He ___ cleaned his dad's car. Now he is tired.",
+    "image": "40.jpeg",
+    "options": [
+      { "text": "is", "value": "A" },
+      { "text": "did", "value": "B" },
+      { "text": "was", "value": "C" },
+      { "text": "has", "value": "D" }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "question": "We were having our English lesson when the ambulance ___.",
+    "image": "41.jpeg",
+    "options": [
+      { "text": "came", "value": "A" },
+      { "text": "comes", "value": "B" },
+      { "text": "has come", "value": "C" },
+      { "text": "was coming", "value": "D" }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "question": "___ salad when I was child,but I love it now.",
+    "image": "42.jpeg",
+    "options": [
+      { "text": "I'm not use to like", "value": "A" },
+      { "text": "I didn't use to like", "value": "B" },
+      { "text": "I don't used to like", "value": "C" },
+      { "text": "I didn't used to like", "value": "D" }
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "question": "Has Tom ever ___ before? No, he hasn't. We should help him.",
+    "image": "43.jpeg",
+    "options": [
+      { "text": "put up a tent", "value": "A" },
+      { "text": "been kayaking", "value": "B" },
+      { "text": "swum with dolphins", "value": "C" },
+      { "text": "been in a hot-air balloon", "value": "D" }
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "question": "How long have you been a ___ ? For about five years.",
+    "image": "44.jpeg",
+    "options": [
+      { "text": "pilot", "value": "A" },
+      { "text": "dentist", "value": "B" },
+      { "text": "gardener", "value": "C" },
+      { "text": "paramedic", "value": "D" }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "question": "Motorbikes aren't ___ as planes.",
+    "image": "45.png",
+    "options": [
+      { "text": "fast", "value": "A" },
+      { "text": "faster", "value": "B" },
+      { "text": "fastest", "value": "C" },
+      { "text": "more fast", "value": "D" }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "question": "I like your jeans. Thanks. They are really warm because they're made of ___.",
+    "image": "46.jpeg",
+    "options": [
+      { "text": "wood", "value": "A" },
+      { "text": "metal", "value": "B" },
+      { "text": "denim", "value": "C" },
+      { "text": "leather", "value": "D" }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "question": "I'm learning to play the guitar.One day I ___ a famous musician.",
+    "image": "47.png",
+    "options": [
+      { "text": "am", "value": "A" },
+      { "text": "have been", "value": "D" },
+      { "text": "am being", "value": "C" },
+      { "text": "will be", "value": "B" }
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "question": "My mum will be furious if I ___ call her.",
+    "image": "48.jpeg",
+    "options": [
+      { "text": "haven't", "value": "C" },
+      { "text": "shouldn't", "value": "D" },
+      { "text": "don't", "value": "A" },
+      { "text": "won't", "value": "B" }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "question": "I'm really hungry. I haven't eaten ___  today.",
+    "image": "49.jpeg",
+    "options": [
+      { "text": "something", "value": "A" },
+      { "text": "anything", "value": "B" },
+      { "text": "nothing", "value": "C" },
+      { "text": "many", "value": "D" }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "question": "I'm sure that man stole my bag. But we can't ___ that he did it at the moment.",
+    "image": "50.jpeg",
+    "options": [
+      { "text": "solve", "value": "A" },
+      { "text": "prove", "value": "B" },
+      { "text": "borrow", "value": "C" },
+      { "text": "behave", "value": "D" }
+    ],
+    "correct_answer": "A"
+  }
+  
+]

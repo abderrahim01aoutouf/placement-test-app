@@ -1,0 +1,827 @@
+[
+    {
+      "id": 1,
+      "question": "\"Where ____from?\" \"I'm from England.\" ",
+      "options": [
+        {
+          "text": "you are",
+          "value": "A"
+        },
+        {
+          "text": "you",
+          "value": "B"
+        },
+        {
+          "text": "are you",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "We live in ____ house in London.",
+      "options": [
+        {
+          "text": "any",
+          "value": "A"
+        },
+        {
+          "text": "a",
+          "value": "B"
+        },
+        {
+          "text": "an",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "B"
+    },
+    {
+      "id": 3,
+      "question": "I have two ____ a boy and a girl.",
+      "options": [
+        {
+          "text": "sons",
+          "value": "A"
+        },
+        {
+          "text": "children",
+          "value": "B"
+        },
+        {
+          "text": "boxes",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "B"
+    },
+    {
+      "id": 4,
+      "question": "I work in a ____ I'm a teacher.",
+      "options": [
+        {
+          "text": "hospital",
+          "value": "A"
+        },
+        {
+          "text": "school",
+          "value": "B"
+        },
+        {
+          "text": "supermarket",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "B"
+    },
+    {
+      "id": 5,
+      "question": "This is my sister. ____ name's Susan.",
+      "options": [
+        {
+          "text": "Her",
+          "value": "A"
+        },
+        {
+          "text": "his",
+          "value": "B"
+        },
+        {
+          "text": "He's",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "____ four people in my family",
+      "options": [
+        {
+          "text": "They are",
+          "value": "A"
+        },
+        {
+          "text": "There is",
+          "value": "B"
+        },
+        {
+          "text": "There are",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "C"
+    },
+    {
+      "id": 7,
+      "question": "I get up ____ school in the morning.",
+      "options": [
+        {
+          "text": "for",
+          "value": "A"
+        },
+        {
+          "text": "at",
+          "value": "B"
+        },
+        {
+          "text": "in",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "B"
+    },
+    {
+      "id": 8,
+      "question": "Excuse me, ____ speak English?",
+      "options": [
+        {
+          "text": "are",
+          "value": "A"
+        },
+        {
+          "text": "you do",
+          "value": "B"
+        },
+        {
+          "text": "do you",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "C"
+    },
+    {
+      "id": 9,
+      "question": "\"____ were you at the weekend?\" \"I was in London.\" ",
+      "options": [
+        {
+          "text": "When",
+          "value": "A"
+        },
+        {
+          "text": "Where",
+          "value": "B"
+        },
+        {
+          "text": "What",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "B"
+    },
+    {
+      "id": 10,
+      "question": "Harry will meet ____ at school.",
+      "options": [
+        {
+          "text": "our",
+          "value": "A"
+        },
+        {
+          "text": "we",
+          "value": "B"
+        },
+        {
+          "text": "us",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "C"
+    },
+    {
+      "id": 11,
+      "question": "It's Sam's birthday on Monday. He ____ be 16, I think.",
+      "options": [
+        {
+          "text": "should",
+          "value": "A"
+        },
+        {
+          "text": "can",
+          "value": "B"
+        },
+        {
+          "text": "will",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "C"
+    },
+    {
+      "id": 12,
+      "question": "\"Do you sell coffee?\" \"Yes, we do. How ____ do you want?\"",
+      "options": [
+        {
+          "text": "any",
+          "value": "A"
+        },
+        {
+          "text": "many",
+          "value": "B"
+        },
+        {
+          "text": "much",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "C"
+    },
+    {
+      "id": 13,
+      "question": "\"Is this a good time to talk?\"\"Sorry, no. I ____ lunch.\" ",
+      "options": [
+        {
+          "text": "eat",
+          "value": "A"
+        },
+        {
+          "text": "am eating",
+          "value": "B"
+        },
+        {
+          "text": "eating",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "B"
+    },
+    {
+      "id": 14,
+      "question": "I'd like ____ sugar in my tea, please.",
+      "options": [
+        {
+          "text": "some",
+          "value": "A"
+        },
+        {
+          "text": "any",
+          "value": "B"
+        },
+        {
+          "text": "a",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "My brother ____ football very well.",
+      "options": [
+        {
+          "text": "plays",
+          "value": "A"
+        },
+        {
+          "text": "play",
+          "value": "B"
+        },
+        {
+          "text": "playing",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "Jerry ____ that he can read well.",
+      "options": [
+        {
+          "text": "is knowing",
+          "value": "A"
+        },
+        {
+          "text": "knows",
+          "value": "B"
+        },
+        {
+          "text": "Wants",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "B"
+    },
+    {
+      "id": 17,
+      "question": "Do you want to listen to the radio or ____ TV?",
+      "options": [
+        {
+          "text": "see",
+          "value": "A"
+        },
+        {
+          "text": "look",
+          "value": "B"
+        },
+        {
+          "text": "watch",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "C"
+    },
+    {
+      "id": 18,
+      "question": "We're going to a play tonight. ____ you like to come?",
+      "options": [
+        {
+          "text": "Do",
+          "value": "A"
+        },
+        {
+          "text": "Are",
+          "value": "B"
+        },
+        {
+          "text": "Would",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "C"
+    },
+    {
+      "id": 19,
+      "question": "I like this house, but the ____ is too expensive for me.",
+      "options": [
+        {
+          "text": "money",
+          "value": "A"
+        },
+        {
+          "text": "price",
+          "value": "B"
+        },
+        {
+          "text": "cost",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "B"
+    },
+    {
+      "id": 20,
+      "question": "How do you ____ to the train station?",
+      "options": [
+        {
+          "text": "come",
+          "value": "A"
+        },
+        {
+          "text": "get",
+          "value": "B"
+        },
+        {
+          "text": "arrive",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "B"
+    },
+    {
+      "id": 21,
+      "question": "I think walking is less dangerous ____ cycling.",
+      "options": [
+        {
+          "text": "as",
+          "value": "A"
+        },
+        {
+          "text": "like",
+          "value": "B"
+        },
+        {
+          "text": "than",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "C"
+    },
+    {
+      "id": 22,
+      "question": "Do you ever ask your friends to do favours ____ you?",
+      "options": [
+        {
+          "text": "for",
+          "value": "A"
+        },
+        {
+          "text": "to",
+          "value": "B"
+        },
+        {
+          "text": "about",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "____ ever been to California?",
+      "options": [
+        {
+          "text": "Have you",
+          "value": "A"
+        },
+        {
+          "text": "Are you",
+          "value": "B"
+        },
+        {
+          "text": "Did you",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "A"
+    },
+    {
+      "id": 24,
+      "question": "\"I got about four hours of sleep last night.\"\"That's not ____\"",
+      "options": [
+        {
+          "text": "enough",
+          "value": "A"
+        },
+        {
+          "text": "lot",
+          "value": "B"
+        },
+        {
+          "text": "too much",
+          "value": "C"
+        }
+      ],
+      "correct_answer": "A"
+    },
+    {
+      "id": 25,
+      "question": "If you ____ something from a friend, you should always return it promptly.",
+      "options": [
+        {
+          "text": "borrow",
+          "value": "A"
+        },
+        {
+          "text": "earn",
+          "value": "B"
+        },
+        {
+          "text": "spend",
+          "value": "C"
+        },
+        {
+          "text": "lend",
+          "value": "D"
+        }
+      ],
+      "correct_answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "People were amazed that the robbery took place in a ____ street.",
+      "options": [
+        {
+          "text": "closed",
+          "value": "A"
+        },
+        {
+          "text": "busy",
+          "value": "B"
+        },
+        {
+          "text": "open",
+          "value": "C"
+        },
+        {
+          "text": "clean",
+          "value": "D"
+        }
+      ],
+      "correct_answer": "C"
+    },
+    {
+      "id": 27,
+      "question": "Can you help me? I've tried ____ key on the ring and can't find the correct one.",
+      "options": [
+        {
+          "text": "many",
+          "value": "A"
+        },
+        {
+          "text": "any",
+          "value": "B"
+        },
+        {
+          "text": "every",
+          "value": "C"
+        },
+        {
+          "text": "all",
+          "value": "D"
+        }
+      ],
+      "correct_answer": "C"
+    },
+    {
+      "id": 28,
+      "question": "Maria used to find work uninteresting ____ she became an actress.",
+      "options": [
+        {
+          "text": "unless",
+          "value": "A"
+        },
+        {
+          "text": "until",
+          "value": "B"
+        },
+        {
+          "text": "if",
+          "value": "C"
+        },
+        {
+          "text": "since",
+          "value": "D"
+        }
+      ],
+      "correct_answer": "B"
+    },
+    {
+      "id": 29,
+      "question": "The first time I ____ Julie was in Greece.",
+      "options": [
+        {
+          "text": "had seen",
+          "value": "A"
+        },
+        {
+          "text": "saw",
+          "value": "B"
+        },
+        {
+          "text": "see",
+          "value": "C"
+        },
+        {
+          "text": "was seeing",
+          "value": "D"
+        }
+      ],
+      "correct_answer": "B"
+    },
+    {
+      "id": 30,
+      "question": "My father's French, so ____ the language has been quite easy for me.",
+      "options": [
+        {
+          "text": "to learn",
+          "value": "A"
+        },
+        {
+          "text": "learn",
+          "value": "B"
+        },
+        {
+          "text": "having learned",
+          "value": "C"
+        },
+        {
+          "text": "learning",
+          "value": "D"
+        }
+      ],
+      "correct_answer": "D"
+    },
+    {
+      "id": 31,
+      "question": "The police threatened ____ on strike if their pay didn't get increased.",
+      "options": [
+        {
+          "text": "going",
+          "value": "A"
+        },
+        {
+          "text": "to go",
+          "value": "B"
+        },
+        {
+          "text": "that they go",
+          "value": "C"
+        },
+        {
+          "text": "to have gone",
+          "value": "D"
+        }
+      ],
+      "correct_answer": "B"
+    },
+    {
+      "id": 32,
+      "question": "At the age of 17, I ____ not to go to work until I finished university.",
+      "options": [
+        {
+          "text": "had decided",
+          "value": "A"
+        },
+        {
+          "text": "decided",
+          "value": "B"
+        },
+        {
+          "text": "have decided",
+          "value": "C"
+        },
+        {
+          "text": "was deciding",
+          "value": "D"
+        }
+      ],
+      "correct_answer": "A"
+    },
+    {
+    "id": 33,
+    "question": "I ____ outside the community centre when suddenly a police car arrived.",
+    "options": [
+      {
+        "text": "stood",
+        "value": "A"
+      },
+      {
+        "text": "was standing",
+        "value": "B"
+      },
+      {
+        "text": "have stood",
+        "value": "C"
+      },
+      {
+        "text": "am standing",
+        "value": "D"
+      }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "id": 34,
+    "question": "If I ____ closer to my friend's house, I could walk to her house every day.",
+    "options": [
+      {
+        "text": "lived",
+        "value": "A"
+      },
+      {
+        "text": "would live",
+        "value": "B"
+      },
+      {
+        "text": "had lived",
+        "value": "C"
+      },
+      {
+        "text": "live",
+        "value": "D"
+      }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "id": 35,
+    "question": "My teacher advised me ____ more time to study.",
+    "options": [
+      {
+        "text": "take",
+        "value": "A"
+      },
+      {
+        "text": "taking",
+        "value": "B"
+      },
+      {
+        "text": "having taken",
+        "value": "C"
+      },
+      {
+        "text": "to take",
+        "value": "D"
+      }
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "id": 36,
+    "question": "Juait ____ married since he was 23.",
+    "options": [
+      {
+        "text": "is",
+        "value": "A"
+      },
+      {
+        "text": "was",
+        "value": "B"
+      },
+      {
+        "text": "has been",
+        "value": "C"
+      },
+      {
+        "text": "is being",
+        "value": "D"
+      }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "id": 37,
+    "question": "I've finished this sandwich and I'm still hungry. I ____ ordered more food.",
+    "options": [
+      {
+        "text": "must have",
+        "value": "A"
+      },
+      {
+        "text": "would have",
+        "value": "B"
+      },
+      {
+        "text": "should have",
+        "value": "C"
+      },
+      {
+        "text": "may have",
+        "value": "D"
+      }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "id": 38,
+    "question": "Having ____ his driving test many times, Jack finally passed on the fifth attempt.",
+    "options": [
+      {
+        "text": "taken",
+        "value": "A"
+      },
+      {
+        "text": "made",
+        "value": "B"
+      },
+      {
+        "text": "attended",
+        "value": "C"
+      },
+      {
+        "text": "had",
+        "value": "D"
+      }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "id": 39,
+    "question": "The police officers claimed that they acted in self- ____",
+    "options": [
+      {
+        "text": "interest",
+        "value": "A"
+      },
+      {
+        "text": "confidence",
+        "value": "B"
+      },
+      {
+        "text": "discipline",
+        "value": "C"
+      },
+      {
+        "text": "defence",
+        "value": "D"
+      }
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "id": 40,
+    "question": "Some married couples seem to look more ____ over time.",
+    "options": [
+      {
+        "text": "alike",
+        "value": "A"
+      },
+      {
+        "text": "same",
+        "value": "B"
+      },
+      {
+        "text": "love",
+        "value": "C"
+      },
+      {
+        "text": "equal",
+        "value": "D"
+      }
+    ],
+    "correct_answer": "A"
+  }
+]
+ 
