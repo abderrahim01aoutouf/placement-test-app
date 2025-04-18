@@ -1,206 +1,219 @@
-    Abderrahim Aoutouf
-    {% extends 'base.html' %}
+{% extends 'base.html' %}
 
-    {% block title %}Tableau de bord Admin - {{ super() }}{% endblock %}
+{% block title %}Admin Dashboard - {{ super() }}{% endblock %}
 
-    {% block content %}
-    <div class="container-fluid mt-4">
-        <div class="row">
-            <div class="col-12">
-                <div class="card shadow-lg">
-                    <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                        <h2 class="mb-0">Tableau de bord Admin</h2>
-                        <div>
-                            <a href="{{ url_for('admin_export') }}" class="btn btn-light me-2">
-                                <i class="fas fa-download"></i> Générer Export JSON
-                            </a>
-                            <a href="{{ url_for('static', filename='data/students_export.csv') }}" class="btn btn-outline-info" download>
-                                <i class="fas fa-file-download"></i> Télécharger CSV
-                            </a>
-                            
-                            <a href="{{ url_for('admin_logout') }}" class="btn btn-danger">
-                                <i class="fas fa-sign-out-alt"></i> Déconnexion
-                            </a>
-                        </div>
+{% block content %}
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                    <h2 class="mb-0">Admin Dashboard</h2>
+                    <div>
+                        <a href="{{ url_for('admin_create_student') }}" class="btn btn-success me-2">
+                            <i class="fas fa-user-plus"></i> Create Student
+                        </a>
+                        <a href="{{ url_for('admin_export') }}" class="btn btn-light me-2">
+                            <i class="fas fa-download"></i> Generate JSON Export
+                        </a>
+                        <a href="{{ url_for('export_excel') }}" class="btn btn-success me-2">
+                            <i class="fas fa-file-excel"></i> Generate Excel Export
+                        </a>
+                        <a href="{{ url_for('export_csv') }}" class="btn btn-light me-2">
+                            <i class="fas fa-file-csv"></i> Generate CSV Export
+                        </a>
+                        <a href="{{ url_for('admin_logout') }}" class="btn btn-danger">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
                     </div>
-                    <div class="card-body">
-                        {% with messages = get_flashed_messages(with_categories=true) %}
-                            {% if messages %}
-                                {% for category, message in messages %}
-                                    <div class="alert alert-{{ category }}">{{ message }}</div>
-                                {% endfor %}
-                            {% endif %}
-                        {% endwith %}
-                        
-                        <div class="mb-3">
-                            <h3>Gestion des données</h3>
-                            <div class="d-flex gap-2 mb-4">
-                                <a href="{{ url_for('static', filename='data/students_export.json') }}" download class="btn btn-success">
-                                    <i class="fas fa-file-download"></i> Télécharger les données JSON
-                                </a>
-                                
-                                <!-- Bouton pour supprimer tous les résultats -->
-                                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cleanResultsModal">
-                                    <i class="fas fa-eraser"></i> Nettoyer les résultats
-                                </button>
-                                
-                                <!-- Bouton pour supprimer toutes les données -->
-                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#cleanDatabaseModal">
-                                    <i class="fas fa-trash-alt"></i> Nettoyer toutes les données
-                                </button>
+                </div>
+                <div class="card-body">
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                            {% for category, message in messages %}
+                                <div class="alert alert-{{ category }}">{{ message }}</div>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+
+                    <div class="mb-3">
+                        <h3>Data Management</h3>
+                        <div class="d-flex gap-2 mb-4">
+                            <a href="{{ url_for('static', filename='data/students_export.csv') }}" download class="btn btn-success">
+                                <i class="fas fa-file-download"></i> Download CSV Data
+                            </a>
+                            <a href="{{ url_for('static', filename='data/students_export.xlsx') }}" download class="btn btn-success">
+                                <i class="fas fa-file-download"></i> Download Excel Data
+                            </a>
+                            <a href="{{ url_for('static', filename='data/students_export.json') }}" download class="btn btn-success">
+                                <i class="fas fa-file-download"></i> Download JSON Data
+                            </a>
+
+                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cleanResultsModal">
+                                <i class="fas fa-eraser"></i> Clear Results
+                            </button>
+
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#cleanDatabaseModal">
+                                <i class="fas fa-trash-alt"></i> Clear All Data
+                            </button>
+                        </div>
+
+                        <h3>Student List</h3>
+
+                        {% if students %}
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Access Code</th>
+                                            <th>Age</th>
+                                            <th>Email</th>
+                                            <th>Phone</th>
+                                            <th>Category</th>
+                                            <th>Actions</th>
+                                            <th>Test Type</th>
+                                            <th>Score</th>
+                                            <th>Level</th>
+                                            <th>Registration Date</th>
+                                            <th>Test Date</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for student in students %}
+                                        <tr>
+                                            <td>{{ student.id }}</td>
+                                            <td>{{ student.full_name }}</td>
+                                            <td><span class="badge bg-secondary">{{ student.access_code }}</span></td>
+                                            <td>{{ student.age }}</td>
+                                            <td>{{ student.email }}</td>
+                                            <td>{{ student.phone }}</td>
+                                            <td>
+                                                {% if student.category == 'adult' %}
+                                                    Adult
+                                                {% elif student.category == 'teenager' %}
+                                                    Teenager
+                                                {% else %}
+                                                    Child
+                                                {% endif %}
+                                            </td>
+                                            <td>
+                                                <a href="{{ url_for('admin_view_student_results', student_id=student.id) }}" class="btn btn-info btn-sm">
+                                                    <i class="fas fa-chart-bar"></i> Results
+                                                </a>
+                                            </td>
+                                            <td>
+                                                {% if student.test_type == 'general' %}
+                                                    General Communication
+                                                {% elif student.test_type == 'exam_prep' %}
+                                                    Exam Preparation
+                                                {% else %}
+                                                    {{ student.test_type or 'N/A' }}
+                                                {% endif %}
+                                            </td>
+                                            <td>{{ student.score or 'N/A' }}</td>
+                                            <td>
+                                                {% if student.level %}
+                                                    <span class="badge bg-primary">{{ student.level }}</span>
+                                                {% else %}
+                                                    N/A
+                                                {% endif %}
+                                            </td>
+                                            <td>{{ student.registration_date }}</td>
+                                            <td>{{ student.test_date or 'N/A' }}</td>
+
+
+                                            </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
                             </div>
-                            
-                            <h3>Liste des étudiants</h3>
-                            
-                            {% if students %}
-                                <div class="table-responsive">
-                                    <table class="table table-striped table-hover">
-                                        <thead class="table-dark">
-                                            <tr>
-                                                <th>ID</th>
-                                                <th>Nom</th>
-                                                <th>Âge</th>
-                                                <th>Email</th>
-                                                <th>Téléphone</th>
-                                                <th>Catégorie</th>
-                                                <th>Type Test</th>
-                                                <th>Score</th>
-                                                <th>Niveau</th>
-                                                <th>Date d'inscription</th>
-                                                <th>Date Test</th>
-                                                <
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            {% for student in students %}
-                                            <tr>
-                                                <td>{{ student.id }}</td>
-                                                <td>{{ student.full_name }}</td>
-                                                <td>{{ student.age }}</td>
-                                                <td>{{ student.email }}</td>
-                                                <td>{{ student.phone }}</td>
-                                                <td>
-                                                    {% if student.category == 'adult' %}
-                                                        Adulte
-                                                    {% elif student.category == 'teenager' %}
-                                                        Adolescent
-                                                    {% else %}
-                                                        Enfant
-                                                    {% endif %}
-                                                </td>
-                                                <td>
-                                                    {% if student.test_type == 'general' %}
-                                                        Communication Générale
-                                                    {% elif student.test_type == 'exam_prep' %}
-                                                        Préparation aux Examens
-                                                    {% else %}
-                                                        {{ student.test_type or 'N/A' }}
-                                                    {% endif %}
-                                                </td>
-                                                <td>{{ student.score or 'N/A' }}</td>
-                                                <td>
-                                                    {% if student.level %}
-                                                        <span class="badge bg-primary">{{ student.level }}</span>
-                                                    {% else %}
-                                                        N/A
-                                                    {% endif %}
-                                                </td>
-                                                <td>{{ student.registration_date }}</td>
-                                                <td>{{ student.test_date or 'N/A' }}</td>
-                                                
-                                                    
-                                                    <!-- Modal de confirmation pour la suppression d'un étudiant -->
-                                                    
-                                            </tr>
-                                            {% endfor %}
-                                        </tbody>
-                                    </table>
-                                </div>
-                            {% else %}
-                                <div class="alert alert-info">
-                                    Aucun étudiant enregistré pour le moment.
-                                </div>
-                            {% endif %}
-                        </div>
+                        {% else %}
+                            <div class="alert alert-info">
+                                No students registered at the moment.
+                            </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Modal de confirmation pour nettoyer tous les résultats -->
-    <div class="modal fade" id="cleanResultsModal" tabindex="-1" aria-labelledby="cleanResultsModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header bg-warning text-dark">
-                    <h5 class="modal-title" id="cleanResultsModalLabel">Confirmer la suppression des résultats</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Êtes-vous sûr de vouloir supprimer <strong>TOUS les résultats de tests</strong> ?
-                    <br><br>
-                    Cette action supprimera uniquement les résultats de tests, mais conservera les informations des étudiants.
-                    <br><br>
-                    Cette action est irréversible !
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                    <form action="{{ url_for('clean_results') }}" method="POST">
-                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
-                        <button type="submit" class="btn btn-warning">Supprimer tous les résultats</button>
-                    </form>
-                </div>
+<div class="modal fade" id="cleanResultsModal" tabindex="-1" aria-labelledby="cleanResultsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-warning text-dark">
+                <h5 class="modal-title" id="cleanResultsModalLabel">Confirm Clear Results</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete <strong>ALL test results</strong>?
+                <br><br>
+                This action will only delete the test results, but will keep the student information.
+                <br><br>
+                This action is irreversible!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <form action="{{ url_for('clean_results') }}" method="POST">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                    <button type="submit" class="btn btn-warning">Clear All Results</button>
+                </form>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Modal de confirmation pour nettoyer toute la base de données -->
-    <div class="modal fade" id="cleanDatabaseModal" tabindex="-1" aria-labelledby="cleanDatabaseModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header bg-danger text-white">
-                    <h5 class="modal-title" id="cleanDatabaseModalLabel">Confirmer la suppression de toutes les données</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div class="modal fade" id="cleanDatabaseModal" tabindex="-1" aria-labelledby="cleanDatabaseModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title" id="cleanDatabaseModalLabel">Confirm Clear All Data</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-danger">
+                    <i class="fas fa-exclamation-triangle"></i> <strong>WARNING!</strong>
                 </div>
-                <div class="modal-body">
-                    <div class="alert alert-danger">
-                        <i class="fas fa-exclamation-triangle"></i> <strong>ATTENTION !</strong>
-                    </div>
-                    Êtes-vous sûr de vouloir supprimer <strong>TOUTES les données</strong> de l'application ?
-                    <br><br>
-                    Cette action supprimera tous les étudiants et tous les résultats de tests.
-                    <br><br>
-                    Cette action est irréversible !
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                    <form action="{{ url_for('clean_database') }}" method="POST">
-                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
-                        <button type="submit" class="btn btn-danger">Supprimer toutes les données</button>
-                    </form>
-                </div>
+                Are you sure you want to delete <strong>ALL data</strong> from the application?
+                <br><br>
+                This action will delete all students and all test results.
+                <br><br>
+                This action is irreversible!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <form action="{{ url_for('clean_database') }}" method="POST">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                    <button type="submit" class="btn btn-danger">Clear All Data</button>
+                </form>
             </div>
         </div>
     </div>
-    {% endblock %}
+</div>
+{% endblock %}
 
-    {% block extra_js %}
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Ajout d'animations ou d'interactions JS si nécessaire
-            
-            // Exemple : Confirmation supplémentaire pour la suppression complète
-            const cleanDatabaseForm = document.querySelector('#cleanDatabaseModal form');
-            if (cleanDatabaseForm) {
-                cleanDatabaseForm.addEventListener('submit', function(e) {
-                    const confirmText = prompt("Pour confirmer la suppression de TOUTES les données, tapez 'SUPPRIMER' en majuscules :");
-                    if (confirmText !== 'SUPPRIMER') {
-                        e.preventDefault();
-                        alert("Opération annulée. Les données n'ont pas été supprimées.");
-                    }
-                });
-            }
-        });
-        
-    </script>
-    {% endblock %}
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add animations or JS interactions if needed
+
+        // Example: Additional confirmation for full deletion
+        const cleanDatabaseForm = document.querySelector('#cleanDatabaseModal form');
+        if (cleanDatabaseForm) {
+            cleanDatabaseForm.addEventListener('submit', function(e) {
+                const confirmText = prompt("To confirm the deletion of ALL data, type 'DELETE' in uppercase:");
+                if (confirmText !== 'DELETE') {
+                    e.preventDefault();
+                    alert("Operation cancelled. Data has not been deleted.");
+                }
+            });
+        }
+    });
+
+</script>
+{% endblock %}

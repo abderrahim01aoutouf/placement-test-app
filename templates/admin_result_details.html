@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block title %}Result Details - {{ super() }}{% endblock %}
+
+{% block content %}
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                    <h2 class="mb-0">{{ student.full_name }}'s Test Details</h2>
+                    <div>
+                        <a href="{{ url_for('admin_view_student_results', student_id=student.id) }}" class="btn btn-light me-2">
+                            <i class="fas fa-arrow-left"></i> Back to Results
+                        </a>
+                        <a href="{{ url_for('admin_edit_result', result_id=result.id) }}" class="btn btn-warning">
+                            <i class="fas fa-edit"></i> Edit This Result
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="mb-4">
+                        <h3>Test Information</h3>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p><strong>Test Date:</strong> {{ result.test_date.strftime('%Y-%m-%d %H:%M:%S') }}</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p><strong>Score:</strong> {{ result.score }}</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p><strong>Level:</strong> <span class="badge bg-primary">{{ result.level }}</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <h3>Answer Details</h3>
+
+                        {% for question in questions %}
+                        <div class="question-container mb-4">
+                            <div class="card {% if answers[loop.index|string] == question.correct_answer %}border-success{% else %}border-danger{% endif %}">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h5>Question {{ loop.index }}</h5>
+                                    <span class="badge {% if answers[loop.index|string] == question.correct_answer %}bg-success{% else %}bg-danger{% endif %}">
+                                        {% if answers[loop.index|string] == question.correct_answer %}Correct{% else %}Incorrect{% endif %}
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="fw-bold">{{ question.question }}</p>
+
+                                    {% if question.image %}
+                                    <div class="text-center mb-3">
+                                        <img src="{{ url_for('static', filename='img/' + question.image) }}"
+                                             alt="Question image"
+                                             class="img-fluid rounded"
+                                             style="max-height: 200px">
+                                    </div>
+                                    {% endif %}
+
+                                    <div class="row">
+                                        {% for option in question.options %}
+                                        <div class="col-md-6 mb-3">
+                                            <div class="card option-card
+                                                        {% if option.value == question.correct_answer %}border-success bg-success-light{% endif %}
+                                                        {% if option.value == answers[loop.outer.index|string] and option.value != question.correct_answer %}border-danger bg-danger-light{% endif %}">
+                                                <div class="card-body">
+                                                    {% if option.image %}
+                                                    <img src="{{ url_for('static', filename='img/' + option.image) }}"
+                                                         alt="Option image"
+                                                         class="img-fluid mb-2">
+                                                    {% endif %}
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <span>{{ option.text }}</span>
+                                                        {% if option.value == answers[loop.outer.index|string] %}
+                                                        <span class="badge bg-primary">Student's Answer</span>
+                                                        {% endif %}
+                                                        {% if option.value == question.correct_answer %}
+                                                        <span class="badge bg-success">Correct Answer</span>
+                                                        {% endif %}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

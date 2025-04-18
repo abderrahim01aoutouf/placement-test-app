@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% block title %}Edit Result - {{ super() }}{% endblock %}
+
+{% block content %}
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                    <h2 class="mb-0">Edit {{ student.full_name }}'s Result</h2>
+                    <div>
+                        <a href="{{ url_for('admin_view_student_results', student_id=student.id) }}" class="btn btn-light">
+                            <i class="fas fa-arrow-left"></i> Back to Results
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                            {% for category, message in messages %}
+                                <div class="alert alert-{{ category }}">{{ message }}</div>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+
+                    <form method="POST">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+
+                        <div class="mb-3">
+                            <label for="score" class="form-label">Score</label>
+                            <input type="number" class="form-control" id="score" name="score" value="{{ result.score }}" min="0" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Level Type</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="level_type" id="predefinedLevel" value="predefined" checked>
+                                <label class="form-check-label" for="predefinedLevel">
+                                    Predefined Level
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="level_type" id="customLevel" value="custom">
+                                <label class="form-check-label" for="customLevel">
+                                    Custom Level
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3" id="predefinedLevelDiv">
+                            <label for="predefined_level" class="form-label">Predefined Level</label>
+                            <select class="form-select" id="predefined_level" name="predefined_level">
+                                {% if student.category == 'kids' %}
+                                    <option value="Starter level" {% if result.level == "Starter level" %}selected{% endif %}>Starter level (0-5 points)</option>
+                                    <option value="Level 1 (CEFR Pre-A1)" {% if result.level == "Level 1 (CEFR Pre-A1)" %}selected{% endif %}>Level 1 (CEFR Pre-A1) (6-10 points)</option>
+                                    <option value="Level 2 (CEFR Pre-A1)" {% if result.level == "Level 2 (CEFR Pre-A1)" %}selected{% endif %}>Level 2 (CEFR Pre-A1) (11-20 points)</option>
+                                    <option value="Level 3 (CEFR A1)" {% if result.level == "Level 3 (CEFR A1)" %}selected{% endif %}>Level 3 (CEFR A1) (21-30 points)</option>
+                                    <option value="Level 4 (CEFR A1)" {% if result.level == "Level 4 (CEFR A1)" %}selected{% endif %}>Level 4 (CEFR A1) (31-40 points)</option>
+                                    <option value="Level 5 (CEFR A2)" {% if result.level == "Level 5 (CEFR A2)" %}selected{% endif %}>Level 5 (CEFR A2) (41-50 points)</option>
+                                {% elif student.category == 'teenager' %}
+                                    <option value="JUNIOR 1" {% if result.level == "JUNIOR 1" %}selected{% endif %}>JUNIOR 1 (0-10 points)</option>
+                                    <option value="JUNIOR 2" {% if result.level == "JUNIOR 2" %}selected{% endif %}>JUNIOR 2 (10-20 points)</option>
+                                    <option value="JUNIOR 3" {% if result.level == "JUNIOR 3" %}selected{% endif %}>JUNIOR 3 (20-30 points)</option>
+                                    <option value="JUNIOR 4" {% if result.level == "JUNIOR 4" %}selected{% endif %}>JUNIOR 4 (30-40 points)</option>
+                                {% else %} <option value="Starter" {% if result.level == "Starter" %}selected{% endif %}>Starter (0-20%)</option>
+                                    <option value="Elementary" {% if result.level == "Elementary" %}selected{% endif %}>Elementary (21-40%)</option>
+                                    <option value="Pre-intermediate" {% if result.level == "Pre-intermediate" %}selected{% endif %}>Pre-intermediate (41-60%)</option>
+                                    <option value="Intermediate" {% if result.level == "Intermediate" %}selected{% endif %}>Intermediate (61-80%)</option>
+                                    <option value="Upper Intermediate" {% if result.level == "Upper Intermediate" %}selected{% endif %}>Upper Intermediate (81-90%)</option>
+                                    <option value="Advanced" {% if result.level == "Advanced" %}selected{% endif %}>Advanced (91-100%)</option>
+                                {% endif %}
+                            </select>
+                        </div>
+
+                        <div class="mb-3" id="customLevelDiv" style="display: none;">
+                            <label for="custom_level" class="form-label">Custom Level</label>
+                            <input type="text" class="form-control" id="custom_level" name="custom_level" value="{{ result.level }}">
+                        </div>
+
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const predefinedRadio = document.getElementById('predefinedLevel');
+        const customRadio = document.getElementById('customLevel');
+        const predefinedDiv = document.getElementById('predefinedLevelDiv');
+        const customDiv = document.getElementById('customLevelDiv');
+
+        // Function to toggle visibility based on selected radio
+        function toggleLevelInputs() {
+            if (predefinedRadio.checked) {
+                predefinedDiv.style.display = 'block';
+                customDiv.style.display = 'none';
+            } else {
+                predefinedDiv.style.display = 'none';
+                customDiv.style.display = 'block';
+            }
+        }
+
+        // Initial state
+        toggleLevelInputs();
+
+        // Event listeners
+        predefinedRadio.addEventListener('change', toggleLevelInputs);
+        customRadio.addEventListener('change', toggleLevelInputs);
+    });
+</script>
+{% endblock %}
+{% endblock %}

@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "question": "\"Where ____from?\" \"I'm from England.\" ",
+      "question": "Where ____from? I'm from England.",
       "options": [
         {
           "text": "you are",
@@ -16,7 +16,7 @@
           "value": "C"
         }
       ],
-      "correct_answer": "A"
+      "correct_answer": "C"
     },
     {
       "id": 2,
@@ -130,7 +130,7 @@
           "value": "C"
         }
       ],
-      "correct_answer": "B"
+      "correct_answer": "A"
     },
     {
       "id": 8,
@@ -358,7 +358,7 @@
           "value": "C"
         }
       ],
-      "correct_answer": "B"
+      "correct_answer": "C"
     },
     {
       "id": 20,
@@ -499,7 +499,7 @@
           "value": "D"
         }
       ],
-      "correct_answer": "C"
+      "correct_answer": "B"
     },
     {
       "id": 27,
@@ -545,7 +545,7 @@
           "value": "D"
         }
       ],
-      "correct_answer": "B"
+      "correct_answer": "D"
     },
     {
       "id": 29,
@@ -637,7 +637,7 @@
           "value": "D"
         }
       ],
-      "correct_answer": "A"
+      "correct_answer": "B"
     },
     {
     "id": 33,
@@ -752,7 +752,7 @@
         "value": "D"
       }
     ],
-    "correct_answer": "C"
+    "correct_answer": "A"
   },
   {
     "id": 38,

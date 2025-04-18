@@ -1,69 +1,57 @@
 <!-- templates/results.html -->
 {% extends 'base.html' %}
 
-{% block title %}Résultats - {{ super() }}{% endblock %}
+{% block title %}Results - {{ super() }}{% endblock %}
 
 {% block content %}
 <div class="row justify-content-center">
     <div class="col-md-8">
         <div class="card shadow animate__animated animate__fadeInUp">
             <div class="card-header bg-primary text-white">
-                <h2 class="card-title mb-0">Résultats du Test</h2>
+                <h2 class="card-title mb-0">Test Results</h2>
             </div>
             <div class="card-body">
                 <div class="text-center mb-5">
                     <h3 class="mb-4">{{ student.full_name }}</h3>
                     <div class="level-result mb-4 animate__animated animate__zoomIn animate__delay-1s">
-                        <div class="level-badge level-{{ result.level.lower() }}">
+                        <div class="level-badge level-{{ result.level|lower|replace(' ', '-')|replace('(', '')|replace(')', '') }}">
                             <span>{{ result.level }}</span>
                         </div>
                     </div>
-                    <p class="lead">Votre niveau de compétence en anglais est :</p>
+                    <p class="lead">Your English proficiency level is:</p>
                     <h2 class="animate__animated animate__fadeIn animate__delay-2s">
-                        {% if result.level == 'A1' %}
-                        Débutant
-                        {% elif result.level == 'A2' %}
-                        Élémentaire
-                        {% elif result.level == 'B1' %}
-                        Intermédiaire
-                        {% elif result.level == 'B2' %}
-                        Intermédiaire avancé
-                        {% elif result.level == 'C1' %}
-                        Avancé
-                        {% elif result.level == 'C2' %}
-                        Maîtrise
-                        {% endif %}
+                        {{ result.level }}
                     </h2>
                 </div>
-                
+
                 <div class="result-details">
                     <div class="row mb-4">
                         <div class="col-md-6 animate__animated animate__fadeInLeft animate__delay-2s">
                             <div class="card h-100">
                                 <div class="card-header bg-light">
-                                    <h4 class="mb-0">Détails du Test</h4>
+                                    <h4 class="mb-0">Test Details</h4>
                                 </div>
                                 <div class="card-body">
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item d-flex justify-content-between">
-                                            <span>Catégorie :</span>
+                                            <span>Category :</span>
                                             <span class="fw-bold">
-                                                {% if student.category == 'adult' %}Adulte
-                                                {% elif student.category == 'teenager' %}Adolescent
-                                                {% else %}Enfant{% endif %}
+                                                {% if student.category == 'adult' %}Adult
+                                                {% elif student.category == 'teenager' %}Teenager
+                                                {% else %}Child{% endif %}
                                             </span>
                                         </li>
                                         {% if student.category == 'adult' %}
                                         <li class="list-group-item d-flex justify-content-between">
-                                            <span>Type de test :</span>
+                                            <span>Test Type :</span>
                                             <span class="fw-bold">
-                                                {% if student.test_type == 'general' %}Communication Générale
-                                                {% else %}Préparation aux Examens{% endif %}
+                                                {% if student.test_type == 'general' %}General Communication
+                                                {% else %}Exam Preparation{% endif %}
                                             </span>
                                         </li>
                                         {% endif %}
                                         <li class="list-group-item d-flex justify-content-between">
-                                            <span>Date du test :</span>
+                                            <span>Test Date :</span>
                                             <span class="fw-bold">{{ result.test_date.strftime('%d/%m/%Y') }}</span>
                                         </li>
                                         <li class="list-group-item d-flex justify-content-between">
@@ -77,22 +65,44 @@
                         <div class="col-md-6 animate__animated animate__fadeInRight animate__delay-2s">
                             <div class="card h-100">
                                 <div class="card-header bg-light">
-                                    <h4 class="mb-0">Description du Niveau</h4>
+                                    <h4 class="mb-0">Level Description</h4>
                                 </div>
                                 <div class="card-body">
                                     <p>
-                                        {% if result.level == 'A1' %}
-                                        Vous pouvez comprendre et utiliser des expressions familières et quotidiennes ainsi que des énoncés très simples qui visent à satisfaire des besoins concrets.
-                                        {% elif result.level == 'A2' %}
-                                        Vous pouvez communiquer lors de tâches simples et habituelles ne demandant qu'un échange d'informations simple et direct sur des sujets familiers.
-                                        {% elif result.level == 'B1' %}
-                                        Vous pouvez comprendre les points essentiels quand un langage clair et standard est utilisé et s'il s'agit de choses familières dans le travail, à l'école, dans les loisirs, etc.
-                                        {% elif result.level == 'B2' %}
-                                        Vous pouvez comprendre le contenu essentiel de sujets concrets ou abstraits dans un texte complexe, y compris une discussion technique dans votre spécialité.
-                                        {% elif result.level == 'C1' %}
-                                        Vous pouvez comprendre une grande gamme de textes longs et exigeants, ainsi que saisir des significations implicites.
-                                        {% elif result.level == 'C2' %}
-                                        Vous pouvez comprendre sans effort pratiquement tout ce que vous lisez ou entendez et vous exprimer spontanément de façon très fluide et précise.
+                                        {% if student.category == 'kids' %}
+                                            {% if 'Starter' in result.level %}
+                                                This level represents the beginning of English learning for young children. It focuses on basics like colors, numbers, and simple greetings.
+                                            {% elif 'Level 1' in result.level or 'Level 2' in result.level %}
+                                                At this Pre-A1 level, the child begins to recognize familiar words and very simple expressions related to their immediate surroundings.
+                                            {% elif 'Level 3' in result.level or 'Level 4' in result.level %}
+                                                At the A1 level, the child can understand and use familiar everyday expressions and very basic phrases, introduce themselves and ask basic questions.
+                                            {% elif 'Level 5' in result.level %}
+                                                At the A2 level, the child can communicate in simple and routine tasks, describe aspects of their background, immediate environment and matters in areas of immediate need.
+                                            {% endif %}
+                                        {% elif student.category == 'teenager' %}
+                                            {% if 'JUNIOR 1' in result.level %}
+                                                This level introduces the basics of English for teenagers. The focus is on fundamental vocabulary and simple sentence structures.
+                                            {% elif 'JUNIOR 2' in result.level %}
+                                                At this level, the teenager can understand and use common everyday expressions and communicate about familiar topics.
+                                            {% elif 'JUNIOR 3' in result.level %}
+                                                This intermediate level allows communication in various social situations and expressing opinions on familiar subjects.
+                                            {% elif 'JUNIOR 4' in result.level %}
+                                                At this advanced level, the teenager can express themselves fluently on a variety of subjects and understand the main ideas of complex texts.
+                                            {% endif %}
+                                        {% else %}
+                                            {% if result.level == 'Starter' %}
+                                                This level represents the beginning of English learning. You can understand and use very basic familiar expressions.
+                                            {% elif result.level == 'Elementary' %}
+                                                You can communicate in simple and routine tasks requiring a simple and direct exchange of information on familiar and routine matters.
+                                            {% elif result.level == 'Pre-intermediate' %}
+                                                You can understand points of relevance in clear standard input on familiar matters.
+                                            {% elif result.level == 'Intermediate' %}
+                                                You can deal with most situations likely to arise whilst travelling and produce simple connected text on topics which are familiar.
+                                            {% elif result.level == 'Upper Intermediate' %}
+                                                You can interact with a degree of fluency and spontaneity that makes regular interaction with native speakers quite possible without strain for either party.
+                                            {% elif result.level == 'Advanced' %}
+                                                You can express yourself fluently and spontaneously without much obvious searching for expressions and understand a wide range of demanding, longer texts.
+                                            {% endif %}
                                         {% endif %}
                                     </p>
                                 </div>
@@ -100,10 +110,10 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="text-center mt-4 animate__animated animate__fadeIn animate__delay-3s">
-                    <a href="{{ url_for('index') }}" class="btn btn-primary">Retour à l'accueil</a>
-                    <button class="btn btn-outline-primary ms-2" onclick="window.print()">Imprimer les résultats</button>
+                    <a href="{{ url_for('index') }}" class="btn btn-primary">Back to Homepage</a>
+                    <button class="btn btn-outline-primary ms-2" onclick="window.print()">Print Results</button>
                 </div>
             </div>
         </div>

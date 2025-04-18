@@ -27,7 +27,7 @@
     { "text": "B", "value": "B", "image": "8-1.jpg" },
     { "text": "C", "value": "C", "image": "9-1.jpeg" }
     ],
-    "correct_answer": "A" 
+    "correct_answer": "C" 
     },
     {
     "question": "Choose the correct picture for: a big dog",
@@ -37,7 +37,7 @@
     { "text": "B", "value": "B", "image": "11-1.jpeg" },
     { "text": "C", "value": "C", "image": "12-1.jpeg" }
     ],
-    "correct_answer": "A" 
+    "correct_answer": "C" 
     },
     {
     "question": "Choose the correct picture for: eyes",
@@ -50,14 +50,14 @@
     "correct_answer": "A" 
     },
     {
-    "question": "I’ve got a long tail. Which animal is it?",
+    "question": "I've got a long tail. Which animal is it?",
     "image": "question6.jpg",
     "options": [
     { "text": "A", "value": "A", "image": "16-1.png" },
     { "text": "B", "value": "B", "image": "17-1.jpeg" },
     { "text": "C", "value": "C", "image": "18-1.png" }
     ],
-    "correct_answer": "A" 
+    "correct_answer": "B" 
     },
     {
     "question": "Choose the correct picture for the word: socks",
@@ -67,7 +67,7 @@
     { "text": "B", "value": "B", "image": "20-1.png" },
     { "text": "C", "value": "C", "image": "21-1.png" }
     ],
-    "correct_answer": "A" 
+    "correct_answer": "C" 
     },
     {
     "question": "Choose the correct picture for the sentence: I can't ride a bike.",
@@ -87,7 +87,7 @@
     { "text": "B", "value": "B", "image": "26-1.png" },
     { "text": "C", "value": "C", "image": "27-1.jpg" }
     ],
-    "correct_answer": "A" 
+    "correct_answer": "B" 
     },
     {
     "question": "Choose the correct picture for the sentence: I like ice cream.",
@@ -97,7 +97,7 @@
     { "text": "B", "value": "B", "image": "28-1.jpeg" },
     { "text": "C", "value": "C", "image": "30-1.jpg" }
     ],
-    "correct_answer": "A" 
+    "correct_answer": "C" 
     },
     {
     "question": "Choose the correct picture for the word: eighteen",
@@ -107,7 +107,7 @@
     { "text": "B", "value": "B", "image": "32-1.png" },
     { "text": "C", "value": "C", "image": "33-1.png" }
     ],
-    "correct_answer": "A" 
+    "correct_answer": "B" 
     },
     {
     "question": "Choose the correct picture for the sentence: These are kites.",
@@ -117,7 +117,7 @@
     { "text": "B", "value": "B", "image": "35-1.jpg" },
     { "text": "C", "value": "C", "image": "36-1.png" }
     ],
-    "correct_answer": "A" 
+    "correct_answer": "B" 
     },
     {
     "question": "Choose the correct picture for the word: lamp",
@@ -137,7 +137,7 @@
     { "text": "B", "value": "B", "image": "41-1.jpeg" },
     { "text": "C", "value": "C", "image": "kikaaass.jpg" }
     ],
-    "correct_answer": "A" 
+    "correct_answer": "B" 
     },
     {
     "question": "Choose the correct picture for the word: juice",
@@ -157,7 +157,7 @@
     { "text": "B", "value": "B", "image": "47-1.png" },
     { "text": "C", "value": "C", "image": "48-1.jpg" }
     ],
-    "correct_answer": "A" 
+    "correct_answer": "C" 
     },
     {
     "question": "Choose the correct picture for the word: badminton",
@@ -177,7 +177,7 @@
     { "text": "B", "value": "B", "image": "53-1.jpeg" },
     { "text": "C", "value": "C", "image": "54-1.jpeg" }
     ],
-    "correct_answer": "A" 
+    "correct_answer": "C" 
     },
     {
     "question": "Who are they?",
@@ -187,7 +187,7 @@
     { "text": "B", "value": "B", "image": "56-1.png" },
     { "text": "C", "value": "C", "image": "57-1.jpeg" }
     ],
-    "correct_answer": "A" 
+    "correct_answer": "B" 
     },
     {
     "question": "What is she doing?",
@@ -197,7 +197,7 @@
     { "text": "B", "value": "B", "image": "59-1.jpeg" },
     { "text": "C", "value": "C", "image": "60-1.png" }
     ],
-    "correct_answer": "A" 
+    "correct_answer": "B" 
     },
     {
     "question": "My name is Tom. ___ a boy.",
@@ -219,7 +219,7 @@
     { "text": "No, it isn't.", "value": "C" },
     { "text": "Yes, it isn't.", "value": "D" }
     ],
-    "correct_answer": "C" 
+    "correct_answer": "B" 
     },
     {
       "question": "That's my ___. He's old.",
@@ -364,7 +364,7 @@
       { "text": "are", "value": "C" },
       { "text": "can", "value": "D" }
     ],
-    "correct_answer": "B"
+    "correct_answer": "C"
   },
   {
     "question": "Is your brother sleeping? No,he ___. He's reading a book.",
@@ -375,7 +375,7 @@
       { "text": "are", "value": "C" },
       { "text": "can", "value": "D" }
     ],
-    "correct_answer": "B"
+    "correct_answer": "A"
   },
   {
     "question": "I like making a snowman in ___.",
@@ -430,7 +430,7 @@
       { "text": "social studies", "value": "C" },
       { "text": "computer studies", "value": "D" }
     ],
-    "correct_answer": "C"
+    "correct_answer": "D"
   },
   {
     "question": "We ___ have PE before lunch on Wednesday.",
@@ -463,7 +463,7 @@
       { "text": "was", "value": "C" },
       { "text": "were", "value": "D" }
     ],
-    "correct_answer": "C"
+    "correct_answer": "D"
   },
   {
     "question": "There are ___ of shops in my city.",
@@ -507,7 +507,7 @@
       { "text": "wasn't", "value": "C" },
       { "text": "weren't", "value": "D" }
     ],
-    "correct_answer": "A"
+    "correct_answer": "D"
   },
   {
     "question": "We're going swimming today. Don't forget your ___.",
@@ -585,7 +585,7 @@
       { "text": "broken arm", "value": "C" },
       { "text": "stomach ache", "value": "D" }
     ],
-    "correct_answer": "C"
+    "correct_answer": "B"
   },
   {
     "question": "Why ___ you buying a present? It was my mum's birthday.",
@@ -607,7 +607,7 @@
       { "text": "mouse", "value": "C" },
       { "text": "screen", "value": "D" }
     ],
-    "correct_answer": "B"
+    "correct_answer": "A"
   },
   {
     "question": "A fish has got tiny ___.",
@@ -618,7 +618,7 @@
       { "text": "scales", "value": "C" },
       { "text": "feathers", "value": "D" }
     ],
-    "correct_answer": "D"
+    "correct_answer": "C"
   },
   {
     "question": "What ___ if you put a marble in water? It sinks.",
@@ -629,7 +629,7 @@
       { "text": "happened", "value": "C" },
       { "text": "happening", "value": "D" }
     ],
-    "correct_answer": "C"
+    "correct_answer": "B"
   },
   {
     "question": "He ___ cleaned his dad's car. Now he is tired.",
@@ -640,7 +640,7 @@
       { "text": "was", "value": "C" },
       { "text": "has", "value": "D" }
     ],
-    "correct_answer": "C"
+    "correct_answer": "D"
   },
   {
     "question": "We were having our English lesson when the ambulance ___.",
@@ -651,7 +651,7 @@
       { "text": "has come", "value": "C" },
       { "text": "was coming", "value": "D" }
     ],
-    "correct_answer": "B"
+    "correct_answer": "A"
   },
   {
     "question": "___ salad when I was child,but I love it now.",
@@ -662,7 +662,7 @@
       { "text": "I don't used to like", "value": "C" },
       { "text": "I didn't used to like", "value": "D" }
     ],
-    "correct_answer": "D"
+    "correct_answer": "B"
   },
   {
     "question": "Has Tom ever ___ before? No, he hasn't. We should help him.",
@@ -673,7 +673,7 @@
       { "text": "swum with dolphins", "value": "C" },
       { "text": "been in a hot-air balloon", "value": "D" }
     ],
-    "correct_answer": "D"
+    "correct_answer": "A"
   },
   {
     "question": "How long have you been a ___ ? For about five years.",
@@ -706,7 +706,7 @@
       { "text": "denim", "value": "C" },
       { "text": "leather", "value": "D" }
     ],
-    "correct_answer": "A"
+    "correct_answer": "C"
   },
   {
     "question": "I'm learning to play the guitar.One day I ___ a famous musician.",
@@ -717,7 +717,7 @@
       { "text": "am being", "value": "C" },
       { "text": "will be", "value": "B" }
     ],
-    "correct_answer": "D"
+    "correct_answer": "B"
   },
   {
     "question": "My mum will be furious if I ___ call her.",
@@ -739,7 +739,7 @@
       { "text": "nothing", "value": "C" },
       { "text": "many", "value": "D" }
     ],
-    "correct_answer": "A"
+    "correct_answer": "B"
   },
   {
     "question": "I'm sure that man stole my bag. But we can't ___ that he did it at the moment.",
@@ -750,7 +750,7 @@
       { "text": "borrow", "value": "C" },
       { "text": "behave", "value": "D" }
     ],
-    "correct_answer": "A"
+    "correct_answer": "B"
   }
   
 ]

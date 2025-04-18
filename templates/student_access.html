@@ -1,0 +1,80 @@
+<!-- templates/student_access.html -->
+{% extends 'base.html' %}
+{% block title %}Student Access - {{ super() }}{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow animate__animated animate__fadeInUp">
+            <div class="card-header bg-primary text-white">
+                <h2 class="card-title mb-0">Test Access</h2>
+            </div>
+            <div class="card-body">
+                <p class="text-center mb-4 text-muted animate__animated animate__fadeIn animate__delay-1s">
+                    Please enter your access code to start or continue your test
+                </p>
+                
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="alert alert-{{ category }} animate__animated animate__shakeX">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                
+                <form method="POST" action="{{ url_for('student_access') }}" id="accessForm">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                    <div class="mb-3 animate__animated animate__fadeInUp animate__delay-1s">
+                        <label for="access_code" class="form-label">Access Code</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-key-fill"></i></span>
+                            <input type="text" class="form-control form-control-lg text-center" 
+                                   id="access_code" name="access_code" 
+                                   placeholder="ENTER YOUR CODE" required autofocus>
+                        </div>
+                    </div>
+                    <div class="text-center animate__animated animate__fadeIn animate__delay-2s">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <span>Access Test</span>
+                            <i class="bi bi-arrow-right-circle ms-2"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer text-muted text-center">
+                <small>For assistance, please contact an administrator</small>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('accessForm');
+        const accessCodeInput = document.getElementById('access_code');
+        
+        // Automatically convert to uppercase
+        accessCodeInput.addEventListener('input', function() {
+            this.value = this.value.toUpperCase();
+        });
+        
+        // Focus effect
+        accessCodeInput.addEventListener('focus', function() {
+            this.closest('.input-group').classList.add('input-group-focus');
+        });
+        
+        accessCodeInput.addEventListener('blur', function() {
+            this.closest('.input-group').classList.remove('input-group-focus');
+        });
+        
+        // Animation on submission
+        form.addEventListener('submit', function() {
+            const submitBtn = form.querySelector('button[type="submit"]');
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Verifying...';
+            submitBtn.classList.add('animate__animated', 'animate__pulse');
+        });
+    });
+</script>
+{% endblock %}
